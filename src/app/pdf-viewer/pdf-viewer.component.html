@@ -1,0 +1,14 @@
+<p>pdf-viewer works!</p>
+<ngx-extended-pdf-viewer    [height]="'60vh'" [showDownloadButton]="true"
+                           [showOpenFileButton]="false" [showPrintButton]="false" [showRotateButton]="false"
+                           [showSecondaryToolbarButton]="false" [showSidebarButton]="false" [showTextEditor]="false"
+                           [src]="'/assets/pdfs/test.pdf'"
+                           [useBrowserLocale]="true">
+  </ngx-extended-pdf-viewer>
+  <button (click)="saveAnnotation()">
+    speicher Annotation
+  </button>
+  <button (click)="scroll(2,0)">
+    scroll
+  </button>
+
