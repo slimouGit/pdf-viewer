@@ -22,7 +22,7 @@ export class PdfViewerComponent {
     console.log("Save Annotation ", annotations);
     if(annotations){
       annotations.forEach(a => {
-        this.scroll(a.pageIndex+1,0)
+        // this.scroll(a.pageIndex+1,0)
       this.pdfService.addEditorAnnotation(a);
       });
   }
