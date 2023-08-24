@@ -20,9 +20,9 @@ export class PdfViewerComponent {
     
     this.pdfService.removeEditorAnnotations();
     console.log("Save Annotation ", annotations);
-    if(annotations){
+    if(annotations){      
       annotations.forEach(a => {
-        // this.scroll(a.pageIndex+1,0)
+      this.scroll(a.pageIndex+1,0)
       this.pdfService.addEditorAnnotation(a);
       });
   }
